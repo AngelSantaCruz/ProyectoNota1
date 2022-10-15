@@ -1,11 +1,29 @@
 .App {
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:100vh;
+}
+body{
+  background: black;
+}
+.AppCard{
+  display : flex;
+  justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.h2{
+  color:black;
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

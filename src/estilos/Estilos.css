@@ -1,0 +1,41 @@
+
+*{
+    padding: 0;
+    margin: 0 ;
+}
+.FAQ {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+.guia {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+.ticket {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+.image{
+    width: 150px;
+    border-radius: 150px;
+}
+.container {
+    width: 280px;
+    background: linear-gradient(to left bottom, #1c51ba);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2{
+    color: black;
+    margin: 20px 0px;
+
+}

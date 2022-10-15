@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from "./componentes/Home"; 
+import { About } from "./componentes/About";
+import { Ranking } from "./componentes/Ranking";
+import { Reviews } from "./componentes/Reviews";
+import { Support } from "./componentes/Support";
+import { Mostrar } from "./componentes/Mostrar";
+import { Formulario } from "./componentes/Formulario";
 import './App.css';
+import { BarraNavegaBootstrao } from "./componentes/BarraNavega";
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   
+    <Router>
+      <BarraNavegaBootstrao/>
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Ranking" element={<Ranking/>}/>
+          <Route path="/Mostrar" element={<Mostrar/>}/>
+          <Route path="/Formulario" element={<Formulario/>}/>
+          <Route path="/Reviews" element={<Reviews/>}/>
+          <Route path="/Support" element={<Support/>}/>
+        </Routes>        
+    </Router>
   );
 }
 
